@@ -10,7 +10,10 @@
 
   @Component
   export default class UserInfo extends Vue {
-    // @Getter
+    @Getter('user') getUser:any;
+    created() {
+    console.log(this.getUser);
+  }
   }
   </script>
   <style scoped lang="scss">
