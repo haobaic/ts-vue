@@ -6,7 +6,7 @@
     router
     >
       <template
-        v-for="(item, index) in getRouters"
+        v-for="(item,index) in getRouters"
         v-if="item.hidden && item.children && item.children.length > 0"
       >
         <el-menu-item
@@ -54,7 +54,7 @@ import { State, Getter, Mutation, Action } from 'vuex-class';
 export default class Sidebar extends Vue {
   @Getter('routers') getRouters: any;
   created() {
-    // console.log(this.getRouters);
+    console.log(this.getRouters);
   }
 }
 </script>

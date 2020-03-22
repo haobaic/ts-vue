@@ -44,6 +44,7 @@ export default class Home extends Vue {
     if (command == "logout") {
       localStorage.removeItem("tsToken");
       this.$router.replace("/login");
+      location.reload()
     }
 
     if (command == "usercenter") this.$router.push("/user");
