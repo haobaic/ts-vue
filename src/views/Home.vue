@@ -5,7 +5,6 @@
       <p class="des">
         欢迎来到TS后台管理系统!
       </p>
-      <el-button @click="learn">进入学习</el-button>
     </div>
   </div>
 </template>
@@ -15,15 +14,7 @@ import { Component, Vue } from 'vue-property-decorator';
 @Component({
   components: {},
 })
-export default class Home extends Vue {
-  learn(): void {
-    // 新窗口打开
-    window.open(
-      'https://ke.qq.com/course/list/%E7%B1%B3%E6%96%AF%E7%89%B9%E5%90%B4?tuin=c9304a42',
-      '_blank',
-    );
-  }
-}
+export default class Home extends Vue {}
 </script>
 
 <style lang="scss"  scoped>

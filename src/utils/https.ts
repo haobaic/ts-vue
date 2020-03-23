@@ -9,11 +9,18 @@ import router from '@/router';
  *
  * 响应拦截器 负责全局处理业务请求的网络或者业务错误
  */
-
+axios.defaults.withCredentials = true;
+	if (process.env.NODE_ENV === 'production') {
+	    axios.defaults.baseURL = 'https://vuets-api.herokuapp.com/api/';  
+	} else {
+	    axios.defaults.baseURL = '/api'; 
+	}
+	console.log( axios.defaults.baseURL)
 //创建axios的实例
 const service = axios.create({
   timeout: 10000, //超时时间
 });
+
 // 请求拦截
 service.interceptors.request.use(
   (config: AxiosRequestConfig) => {

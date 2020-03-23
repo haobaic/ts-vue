@@ -4,7 +4,7 @@
       <el-col :xs="10" :sm="12" :md="14" :lg="16" :xl="18">
         <div class="system-info">
           <img class="logo" src="@/assets/logo.png" alt="" />
-          <span class="title">郝百春</span>
+          <span class="title">TS 后台管理</span>
         </div>
       </el-col>
       <el-col :xs="14" :sm="12" :md="10" :lg="8" :xl="6">
