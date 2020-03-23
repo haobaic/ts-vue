@@ -13,7 +13,7 @@ axios.defaults.withCredentials = true;
 	if (process.env.NODE_ENV === 'production') {
 	    axios.defaults.baseURL = 'https://vuets-api.herokuapp.com/api/';  
 	} else {
-	    axios.defaults.baseURL = '/api'; 
+	    axios.defaults.baseURL = ''; 
 	}
 	console.log( axios.defaults.baseURL)
 //创建axios的实例
